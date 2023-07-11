@@ -1,0 +1,23 @@
+//exercise 5.20
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+	string preword = "", word = "";
+	int cnt = 0;
+
+	while (cin >> word) {
+		if (word == preword) {
+			++cnt;
+			break;
+		}
+		else preword = word;
+	}
+	if (cnt == 0) cout << "no word was repeated" << endl;
+	else cout << preword << " repeated twice" << endl;
+	return 0;
+}
