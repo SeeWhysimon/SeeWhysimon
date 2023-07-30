@@ -48,3 +48,7 @@ int main()
 	}
 	return 0;
 }
+
+//exercise 7.12
+
+sales_data(std::istream& is) { read(is, *this); }
