@@ -52,3 +52,15 @@ int main()
 //exercise 7.12
 
 sales_data(std::istream& is) { read(is, *this); }
+
+//exercise 7.31
+
+class Y;
+
+class X {
+	Y* ptr;
+};
+
+class Y {
+	X obj_x;
+};
