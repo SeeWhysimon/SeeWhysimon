@@ -1,0 +1,20 @@
+void changeString(const std::string oldVal, const std::string newVal, std::string& s)
+{
+    auto iter = s.begin();
+    std::istringstream iss(s);
+    std::string temp;
+    while (iss >> temp) {
+        if (iter != s.end() - oldVal.size()) {
+            if (temp == oldVal) {
+                s.erase(iter, iter + oldVal.size());
+                s.insert(iter, newVal.begin(), newVal.end());
+                iter += newVal.size() + 1;
+            }
+            else iter += temp.size() + 1;
+        }
+        else if (temp == oldVal) {
+            s.erase(iter, iter + oldVal.size());
+            s.insert(iter, newVal.begin(), newVal.end());
+        }
+    }
+}
