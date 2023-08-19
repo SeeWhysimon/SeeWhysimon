@@ -1,8 +1,5 @@
-- 👋 Hi, I’m @SeeWhysimon
-- 👀 I’m interested in Computer Vision/Machine Learning
-- 🌱 I’m currently learning C++/python
-- 💞️ I’m looking to collaborate on anything
-- 📫 How to reach me appleforsimondick@icloud.com
+- 📑this is my personal answers for some of the exercises in C++ Primer 5th Edition.
+- 🤗Welcoming your comment on the shortcomes in my programs.
 
 <!---
 SeeWhysimon/SeeWhysimon is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
