@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main()
+{
+	double a, b;
+	while (std::cin >> a >> b) {
+		try {
+			if (b != 0)
+				std::cout << a/b << std::endl;
+			else
+				throw runtime_error("number divided by 0");
+		}
+		catch (runtime_error err) {
+			std::cout << err.what() << "\nTry Again? Enter y or n" << std::endl;
+			char c;
+			std::cin >> c;
+			if (!std::cin || c == 'n')
+				break;
+		}
+	}
+	return 0;
+}
