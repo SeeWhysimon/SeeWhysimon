@@ -1,3 +1,8 @@
+#include <iostream>
+#include <string>
+#include <iterator>
+#include <sstream>
+
 void changeString(const std::string oldVal, const std::string newVal, std::string& s)
 {
     auto iter = s.begin();
@@ -17,4 +22,12 @@ void changeString(const std::string oldVal, const std::string newVal, std::strin
             s.insert(iter, newVal.begin(), newVal.end());
         }
     }
+}
+
+int main()
+{
+	std::string s = "just cannot go through";
+	changeString("through", "thru", s);
+	std::cout << s << std::endl;
+	return 0;
 }
